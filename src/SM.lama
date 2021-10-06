@@ -64,7 +64,8 @@ public fun evalSM (input, insns) {
 }
 
 -- Compiles an expression into a stack machine code.
--- Takes an expression, returns a list of stack machine instructions
+-- Takes an expression, returns a list 
+-- of stack machine instructions
 fun compileExpr (expr) {
   case expr of
     Const (n)        -> {CONST (n)}
